@@ -50,6 +50,17 @@ a:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
+#sidebarCollapse {
+    width: 35px;
+    height: 35px;
+    background-color:#041524;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .wrapper {
     display: flex;
     width: 100%;

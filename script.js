@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     // Dynamic content loading
     const content = {
-        page1: '<iframe src="OrbitSandbox/index.html" allowfullscreen="true" width="100%" height="800px" style="border:none;"></iframe>',
+        page1: '<iframe src="Pages/OrbitSandbox/index.html" allowfullscreen="true" width="100%" height="800px" style="border:none;"></iframe>',
         page2: '<p>This is the content for Page 2. You can load anything here, even another iframe.</p>',
         page3: '<p>This is the content for Page 3.</p>'
     };

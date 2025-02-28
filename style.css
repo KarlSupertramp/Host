@@ -6,7 +6,7 @@ header {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color: #ffffff;
 	text-align: start;
-	font-size: 23px;
+	font-size: 22px;
 }
 
 body {
@@ -18,17 +18,31 @@ body {
   margin: 0;
 }
 
+hr
+{
+  color: #eda916;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 h1, h2, h3 {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffebc1;
   text-align: start;
 }
 
-h4, h5 {
+h4{
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #eda916;
   text-align: start;
 	font-size: 22px;
+}
+
+.card-content h5 {
+  color: #eda916;
+	font-size: 20px;
+  margin: 0px;
+  margin-top: 5px;
 }
 
 ul {
@@ -36,10 +50,24 @@ ul {
   padding: 0;
 }
 
-img {
+.cards img {
   display: inline-block;
   width: 100%;
   vertical-align: middle;
+}
+
+.card-profile .profile-pic {  
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.card-content .icon-buttons {  
+  width: 100px; 
+  display: inline-block;  
+  overflow: hidden;
 }
 
 a {
@@ -54,16 +82,14 @@ a {
 
 .cards {
   display: grid;
-  align-items: start;
+  align-items: center;
   justify-items: center;
   justify-content: center;
-  margin: 0 0 50px;
   gap: 50px;
 }
 
 .cards-item {
-  width: 90%;
-  min-width: 300px;
+  min-width: 330px;
 }
 
 .card {
@@ -101,22 +127,27 @@ a {
   padding: 0 20px 20px;
 }
 
+.card-profile {
+  display: flex;
+  width: 350px;
+}
+
 .card-content img { 
 	max-height: 32px;
 	width: auto;
 	height: auto;
+  margin-top: 25px;
 }
 
 .card-text {
   display: -webkit-box;
-  line-height: 1.15;
   -webkit-box-orient: vertical;
   overflow: hidden;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .card-text > p {
-  color: #7f8c9b;
+  color:#222a2f;
   margin: 0;
 }
 
@@ -128,7 +159,6 @@ a {
 .button {
   display: block;
   width: 100%;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1;
 	text-align: center;
@@ -136,9 +166,9 @@ a {
   background: #eda916;
   border-radius: 50px;
   padding: 12px 24px;
-  margin: 18px auto 0;
+  margin-top: 25px;
   transition: color 0.3s;
-	background: 0.3s, transform 0.3s;
+	background: 0.3s;
 }
 
 .button:focus,
@@ -155,28 +185,19 @@ footer {
 
 @media (min-width: 475px) {
   .cards-item {
-    width: 100%;
-    max-width: 380px;
+    width: 350px;
   }
 }
 
-@media (min-width: 720px) {
-  .container {
-    padding: 0 40px;
-  }
-
+@media (min-width: 1000px) {
   .cards {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    padding: 0 20px;
-  }
-
+@media (min-width: 1200px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
   }
 }

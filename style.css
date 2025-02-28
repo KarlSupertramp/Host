@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+header {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #ffffff;
+	text-align: start;
+	font-size: 23px;
+}
+
 body {
   background: #222a2f;
   background-repeat: no-repeat;
@@ -13,15 +20,15 @@ body {
 
 h1, h2, h3 {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #eda916;
+  color: #ffebc1;
   text-align: start;
-  margin: 34px 0 50px;
 }
 
 h4, h5 {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #71571f;
+  color: #eda916;
   text-align: start;
+	font-size: 22px;
 }
 
 ul {
@@ -47,7 +54,7 @@ a {
 
 .cards {
   display: grid;
-  align-items: center;
+  align-items: start;
   justify-items: center;
   justify-content: center;
   margin: 0 0 50px;
@@ -60,11 +67,11 @@ a {
 }
 
 .card {
-  background: rgb(244, 235, 226);
+  background: #f4ebe2;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -88,15 +95,16 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  transition: transform 1.5s 0.5s ease-in-out;
-}
-
-.card-visual:hover img {
-  transform: scale(1.2);
 }
 
 .card-content {
   padding: 0 20px 20px;
+}
+
+.card-content img { 
+	max-height: 32px;
+	width: auto;
+	height: auto;
 }
 
 .card-text {
@@ -104,6 +112,7 @@ a {
   line-height: 1.15;
   -webkit-box-orient: vertical;
   overflow: hidden;
+	font-size: 20px;
 }
 
 .card-text > p {
@@ -123,8 +132,8 @@ a {
   font-size: 16px;
   line-height: 1;
 	text-align: center;
-  color: #71571f;
-  background: #e9dab9;
+  color: #eef6ff;
+  background: #eda916;
   border-radius: 50px;
   padding: 12px 24px;
   margin: 18px auto 0;
@@ -135,8 +144,7 @@ a {
 .button:focus,
 .button:hover {
   color: #eef6ff;
-  background: #eda916;
-  transform: scale(1.05);
+  background: #e7b64c;
 }
 
 footer {

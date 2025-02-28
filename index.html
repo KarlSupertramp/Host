@@ -2,39 +2,49 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by Dung Nguyen</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css'><link rel="stylesheet" href="./style.css">
+  <title>Cards</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container">
-
-<h3>Checkout my creations</h3>
-
-<ul id="filters" class="clearfix">
-  <li><span class="filter active" data-filter=".interactive, .card, .icon, .logo, .web">All</span></li>
-  <li><span class="filter" data-filter=".interactive">Interactive</span></li>
-</ul>
-
-<div id="portfoliolist">
-  <a href="./orbitSandbox/index.html">
-    <div class="portfolio interactive" data-cat="interactive">
-      <div class="portfolio-wrapper">
-        <img src="./images/orbitSanbox.jpg" alt="" />
-        <div class="label">
-          <div class="label-text">
-            <a class="text-title">Orbit Sandbox</a>
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
+<body>
+  <header>
+    <div class="container">
+      <h2>Checkout my creations</h2>
     </div>
-  </a>
-</div>
+  </header>
+  <main>
+    <div class="container">
+      <ul class="cards">
+        <li class="cards-item">
+          <div class="card">
+            <a href="./orbitSandbox/index.html" class="card-visual">
+              <img src="./images/orbitSanbox.jpg" alt="Orbit Sandbox" />
+            </a>
+            <div class="card-content">
+              <h4>Orbit Sandbox</h4>
+              <div class="card-text">
+                <p>
+                  Play around with physics and enjoy the colors.
+                </p>
+                <br>
+                <p>
+                  Swipe or drag on the screen, to create an orbiter. Hold to increase the mass of the orbiter. Pinch or scroll to zoom.
+                </p>
+              </div>
+              <a class="button" href="./orbitSandbox/index.html">Start</a>
+            </div>
+          </div>
+        </li>        
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>2025 KarlUweMartin.de</p>
+  </footer>
+</body>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js'></script><script  src="./script.js"></script>
-
+  
 </body>
 </html>

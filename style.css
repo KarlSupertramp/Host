@@ -89,7 +89,7 @@ a {
 }
 
 .cards-item {
-  min-width: 330px;
+  min-width: 420px;
 }
 
 .card {
@@ -129,7 +129,7 @@ a {
 
 .card-profile {
   display: flex;
-  width: 350px;
+  width: 420px;
 }
 
 .card-content img { 
@@ -185,19 +185,27 @@ footer {
 
 @media (min-width: 475px) {
   .cards-item {
-    width: 350px;
+    width: 420px;
   }
 }
 
 @media (min-width: 1000px) {
+  .container {
+    padding: 0 40px;
+  }
+
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     gap: 30px;
   }
 }
 
 @media (min-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .cards {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

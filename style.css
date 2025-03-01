@@ -38,36 +38,9 @@ h4{
 	font-size: 22px;
 }
 
-.card-content h5 {
-  color: #eda916;
-	font-size: 20px;
-  margin: 0px;
-  margin-top: 5px;
-}
-
 ul {
   list-style: none;
   padding: 0;
-}
-
-.cards img {
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-}
-
-.card-profile .profile-pic {  
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin: 10px;
-  margin-right: 0px;
-}
-
-.card-content .icon-buttons {  
-  width: 100px; 
-  display: inline-block;  
-  overflow: hidden;
 }
 
 a {
@@ -80,6 +53,48 @@ a {
   margin: auto;
 }
 
+.cards-profile
+{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-profile-data {
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card-profile-data h5 
+{
+  color: #eda916;
+	font-size: 20px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.card-profile-content {
+  display: flex;
+}
+
+.card-profile-content .profile-pic {  
+  height: auto;
+  max-width: 150px;
+  margin-right: 0px;
+  object-fit: cover;
+}
+
+.card-profile-content .icon-buttons {  
+  width: 100px; 
+  display: inline-block;  
+  overflow: hidden;
+  fill:#222a2f;
+}
+
 .cards {
   display: grid;
   align-items: center;
@@ -88,8 +103,14 @@ a {
   gap: 50px;
 }
 
+.cards img {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
 .cards-item {
-  min-width: 420px;
+  min-width: 300px;
 }
 
 .card {
@@ -109,7 +130,6 @@ a {
   display: block;
   position: relative;
   padding-top: 80%;
-  margin: 0 0 15px;
   overflow: hidden;
 }
 
@@ -125,11 +145,6 @@ a {
 
 .card-content {
   padding: 0 20px 20px;
-}
-
-.card-profile {
-  display: flex;
-  width: 420px;
 }
 
 .card-content img { 
@@ -149,11 +164,6 @@ a {
 .card-text > p {
   color:#222a2f;
   margin: 0;
-}
-
-.card-content > time {
-  color: #6d7987;
-  font-size: 14px;
 }
 
 .button {
@@ -185,26 +195,19 @@ footer {
 
 @media (min-width: 475px) {
   .cards-item {
-    width: 420px;
-  }
+    width: 100%;
+    max-width: 400px;
+  } 
 }
 
-@media (min-width: 1000px) {
-  .container {
-    padding: 0 40px;
-  }
-
+@media (min-width: 720px) {
   .cards {
     grid-template-columns: repeat(2, auto);
     gap: 30px;
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    padding: 0 20px;
-  }
-
+@media (min-width: 992px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }

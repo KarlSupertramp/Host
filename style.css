@@ -89,15 +89,24 @@ a {
 }
 
 .card-profile-content .icon-buttons {  
-  width: 100px; 
-  display: inline-block;  
-  overflow: hidden;
-  fill:#222a2f;
+  display: flex;  
+}
+
+.icon-button
+{
+  width: auto;
+  height: 35px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.icon-button img {
+  filter: invert(93%) sepia(8%) saturate(186%) hue-rotate(16deg) brightness(81%) contrast(84%);
 }
 
 .cards {
   display: grid;
-  align-items: center;
+  align-items: top;
   justify-items: center;
   justify-content: center;
   gap: 50px;
@@ -126,19 +135,13 @@ a {
   transform: scale(1.02);
 }
 
-.card-visual {
-  display: block;
-  position: relative;
-  padding-top: 80%;
-  overflow: hidden;
-}
 
-.card-visual img {
-  position: absolute;
+.card img {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 250px;
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -196,8 +199,12 @@ footer {
 @media (min-width: 475px) {
   .cards-item {
     width: 100%;
-    max-width: 400px;
   } 
+
+  .container
+  {
+    max-width: 450px;
+  }
 }
 
 @media (min-width: 720px) {
@@ -205,10 +212,19 @@ footer {
     grid-template-columns: repeat(2, auto);
     gap: 30px;
   }
+  .container
+  {
+    max-width: 750px;
+  }
 }
 
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container
+  {
+    max-width: 1000px;
   }
 }

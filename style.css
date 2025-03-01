@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 hr
@@ -19,18 +20,34 @@ hr
   margin-bottom: 25px;
 }
 
-h1, h2, h3 {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h1 {	
   color:#eda916;
   text-align: start;
+  font-size: 2em;
+}
+
+ h2 {	
+  color:#eda916;
+  text-align: start;
+  font-size: 1.75em;
+}
+
+h3 {	
+  color:#eda916;
+  text-align: start;
+  font-size: 1.5em;
 }
 
 h4{
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #eda916;
   text-align: start;
-	font-size: 22px;
-  margin-bottom: 5px;
+	font-size: 1.2em
+}
+
+h5{
+  color: #ffffff;
+  text-align: start;
+	font-size: 0.85em
 }
 
 ul {
@@ -61,12 +78,13 @@ a {
   justify-items: center;
   justify-content: center;
   margin: 10px;
+  color: white;
 }
 
 .card-profile-data h5 
 {
   color: #eda916;
-	font-size: 20px;
+	font-size: 1.4em;
   margin: 0px;
   margin-top: 5px;
 }
@@ -76,27 +94,21 @@ a {
 }
 
 .card-profile-content .profile-pic {  
-  height: auto;
-  max-width: 180px;
-  margin-right: 0px;
+  max-width: 100px;
   object-fit: cover;
-}
-
-.card-profile-content .icon-buttons {  
-  display: flex;  
-align-items: start;
+  border-radius: 16px;
+  padding: auto;
+  margin: 15px;
 }
 
 .icon-button
 {
-  width: auto;
-  height: 35px;
-  object-fit: cover;
-  margin-right: 10px;
+  height: 45px;
+  margin: 5px;
 }
 
 .icon-button img {
-  filter: invert(93%) sepia(8%) saturate(186%) hue-rotate(16deg) brightness(81%) contrast(84%);
+  filter: invert(95%) sepia(71%) saturate(1410%) hue-rotate(315deg) brightness(94%) contrast(92%);
 }
 
 .cards {
@@ -122,7 +134,6 @@ align-items: start;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .card img {
@@ -150,7 +161,7 @@ align-items: start;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .card-text > p {
@@ -167,7 +178,7 @@ align-items: start;
 .button {
   display: block;
   width: 100%;
-  font-size: 16px;
+  font-size: 1.1em;
   line-height: 1;
 	text-align: center;
   color: #eef6ff;

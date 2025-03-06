@@ -67,7 +67,7 @@ a {
   margin: auto;
 }
 
-.cards-profile
+.profile
 {
   display: grid;
   align-items: start;
@@ -75,7 +75,7 @@ a {
   justify-content: start;
 }
 
-.card-profile-data {
+.profile-data {
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@ a {
   color: white;
 }
 
-.card-profile-data h5 
+.profile-data h5 
 {
   color: #eda916;
 	font-size: 1.4em;
@@ -92,25 +92,36 @@ a {
   margin-bottom: 15px;
 }
 
-.card-profile-content {
+.profile-content {
   display: flex;
   align-items: start;
   color: white;
 }
 
-.card-profile-content .profile-pic {  
+.profile-content .profile-pic {  
   max-width: 100px;
   max-height: 100px;
   object-fit: cover;
   border-radius: 16px;
   padding: auto;
   margin: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.profile-content .profile-pic:hover {
+  transform: scale(1.05);
 }
 
 .icon-button
 {
   height: 45px;
   margin: 5px;
+  transition: transform 0.2s;
+}
+
+.icon-button:hover {
+  transform: scale(1.05);
 }
 
 .icon-button img {
@@ -119,7 +130,6 @@ a {
 
 .cards {
   display: grid;
-  align-items: top;
   justify-items: center;
   justify-content: center;
   gap: 50px;
@@ -140,6 +150,8 @@ a {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+  box-shadow: 
+    0px 10px 20px #00000080; /* Outer shadow */
 }
 
 .card img {

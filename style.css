@@ -209,7 +209,18 @@ footer {
 
   .container
   {
-    max-width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 720px) {
+  .cards {
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+  .container
+  {
+    max-width: 750px;
   }
 }
 

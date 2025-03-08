@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Orbit Sandbox</title>
+    <title>Unity WebGL Player | OrbitSandbox</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -18,8 +18,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">OrbitSandbox - Go fullscreen!</div>
+        <div id="unity-build-title">OrbitSandbox</div>
       </div>
     </div>
     <script>
@@ -56,13 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Orbit.loader.js";
+      var loaderUrl = buildUrl + "/orbitSandbox.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Orbit.data",
-        frameworkUrl: buildUrl + "/Orbit.framework.js",
-        codeUrl: buildUrl + "/Orbit.wasm",
+        dataUrl: buildUrl + "/orbitSandbox.data",
+        frameworkUrl: buildUrl + "/orbitSandbox.framework.js",
+        codeUrl: buildUrl + "/orbitSandbox.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "KarlMartin",
         productName: "OrbitSandbox",
         productVersion: "0.1",
         showBanner: unityShowBanner,

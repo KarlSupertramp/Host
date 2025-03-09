@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
-
 }
-
 
 body {
   background: #222a2f;
@@ -24,6 +22,12 @@ body {
     'Helvetica Neue', 
     sans-serif;
   color: white;
+}
+
+footer {
+  text-align: center;
+  color: #323d44;
+  padding: 0 0 30px;
 }
 
 hr
@@ -72,11 +76,17 @@ a {
   text-decoration: none;
 }
 
+b {
+  color:#e7b64c
+}
+
 .container {
   max-width: 1000px;
   padding: 0 20px;
   margin: auto;
 }
+
+/*  PROFILE */
 
 .profile
 {
@@ -124,6 +134,8 @@ a {
   transform: scale(1.05);
 }
 
+/* SKILLS */
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -155,6 +167,20 @@ a {
   margin-right: 5px;
 }
 
+.citation
+{
+  text-align: center;
+  width: 100%;
+  font-size: 1.3em;
+  background-color: #323d44;
+  font-style: italic;
+  padding: 10px;
+  border-radius: 16px;
+  margin: 5px 0px;
+}
+
+/* ICON BUTTON */
+
 .icon-button
 {
   height: 45px;
@@ -170,10 +196,13 @@ a {
   filter: invert(95%) sepia(71%) saturate(1410%) hue-rotate(315deg) brightness(94%) contrast(92%);
 }
 
+/* CARDS */
+
 .cards {
   display: grid;
   justify-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 .cards img {
@@ -253,11 +282,7 @@ a {
   background: #e7b64c;
 }
 
-footer {
-  text-align: center;
-  color: #323d44;
-  padding: 0 0 30px;
-}
+/* MEDIA QUERRIES */
 
 @media (min-width: 500px) {
   .cards-item {
@@ -273,7 +298,6 @@ footer {
 @media (min-width: 720px) {
   .cards {
     grid-template-columns: repeat(2, auto);
-    gap: 30px;
   }
 
   .container

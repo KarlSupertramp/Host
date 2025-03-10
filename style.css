@@ -94,6 +94,7 @@ b {
   align-items: start;
   justify-items: start;
   justify-content: start;
+  margin-bottom: 15px;
 }
 
 .profile-data {
@@ -109,8 +110,8 @@ b {
   color: #eda916;
 	font-size: 1.4em;
   margin: 0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .profile-content {
@@ -120,8 +121,8 @@ b {
 }
 
 .profile-content .profile-pic {  
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 85px;
+  max-height: 85px;
   object-fit: cover;
   border-radius: 16px;
   padding: auto;
@@ -132,6 +133,21 @@ b {
 
 .profile-content .profile-pic:hover {
   transform: scale(1.05);
+}
+
+.icon-button
+{
+  height: 45px;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.icon-button:hover {
+  transform: scale(1.05);
+}
+
+.icon-button img {
+  filter: invert(95%) sepia(71%) saturate(1410%) hue-rotate(315deg) brightness(94%) contrast(92%);
 }
 
 /* SKILLS */
@@ -172,29 +188,13 @@ b {
   text-align: center;
   width: 100%;
   font-size: 1.3em;
-  background-color: #323d44;
+  background-color:#2a3339;
   font-style: italic;
   padding: 10px;
   border-radius: 16px;
-  margin: 5px 0px;
+  margin: 15px 0px;
 }
 
-/* ICON BUTTON */
-
-.icon-button
-{
-  height: 45px;
-  margin: 5px;
-  transition: transform 0.2s;
-}
-
-.icon-button:hover {
-  transform: scale(1.05);
-}
-
-.icon-button img {
-  filter: invert(95%) sepia(71%) saturate(1410%) hue-rotate(315deg) brightness(94%) contrast(92%);
-}
 
 /* CARDS */
 
@@ -280,6 +280,50 @@ b {
 .button:hover {
   color: #eef6ff;
   background: #e7b64c;
+}
+
+/* NAV */
+
+.nav {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  position: relative;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > .nav-links > a.active {
+  font-weight: bold;
+}
+
+.nav > .nav-links > a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color:#e7b64c;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.nav > #nav-check {
+  display: none;
 }
 
 /* MEDIA QUERRIES */

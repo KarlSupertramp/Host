@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Showroom - Karl Martin</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./javascript.js"></script>
 </head>
 
 <body>
   <main>
+
     <!-- Profile -->
-    <div class="container">
-     
+    <div class="container">   
       <ul class="profile">
         <li class="profile-content">
           <a href="./about.html">
             <img src="https://avatars.githubusercontent.com/u/12151775?v=4" class="profile-pic" />
-          </a>   
+          </a>
           <div class="profile-data">
             <h5>Karl Martin</h5>
             <a class="icon-button" href="https://github.com/KarlSupertramp/">
@@ -30,18 +32,24 @@
           </div>
         </li>
       </ul>
-      <p>Creativity isn't just my profession - it's my passion. 
-        <br><br>
-        This website is my way of sharing projects that might otherwise sit forgotten in a repository. Most of 
-        my work is done in Unity, which conveniently supports WebGL deployment. I'll do my best to make my demos 
-        as cross-platform as possible.
-      </p>
+
+      <div class="nav">
+        <input type="checkbox" id="nav-check">       
+        <div class="nav-links">
+          <a href="./index.html">Showroom</a>
+          <a href="./about.html">About Me</a>
+          <!--<a href="#">Cudos</a>-->
+        </div>
+      </div>
 
     </div>
-    <hr>
 
     <div class="container">
-      <h2>Hit start and dive in!</h2>
+      <p>
+        This <b>SHOWROOM</b> is my way of sharing projects that might otherwise sit forgotten in a repository. Most of
+        my work is done in Unity, which conveniently supports WebGL deployment - so I'll do my best to make my demos
+        as cross-platform as possible.
+      </p>
     </div>
     <div class="container">
       <ul class="cards">
@@ -108,8 +116,9 @@
 
       </ul>
     </div>
-    <hr>
+ 
   </main>
+
   <footer>
     <p>
       2025 - www.karluwemartin.de

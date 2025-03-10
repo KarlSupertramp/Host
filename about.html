@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me - Karl Martin</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./javascript.js"></script>
 </head>
 
 <body>
@@ -12,9 +13,12 @@
     
     <!-- Profile Section -->
     <div class="container">
+
       <ul class="profile">
         <li class="profile-content">
-          <img src="https://avatars.githubusercontent.com/u/12151775?v=4" class="profile-pic" />
+          <a href="./about.html">
+            <img src="https://avatars.githubusercontent.com/u/12151775?v=4" class="profile-pic" />
+          </a>
           <div class="profile-data">
             <h5>Karl Martin</h5>
             <a class="icon-button" href="https://github.com/KarlSupertramp/">
@@ -29,28 +33,35 @@
           </div>
         </li>
       </ul>
-    </div>
 
-    <hr>
+      <div class="nav">
+        <input type="checkbox" id="nav-check">       
+        <div class="nav-links">
+          <a href="./index.html">Showroom</a>
+          <a href="./about.html">About Me</a>
+          <!--<a href="#">Cudos</a>-->
+        </div>
+      </div>
+
+    </div>
 
     <!-- About Me Introduction -->
     <div class="container">      
       <p>
-        <div class="citation">
-          <p>"Every <b>THING</b> is an interface!"</p>
-        </div>
-          I am convinced that every object, whether created by humans or naturally formed,
-          is an interface. Consciously or unconsciously used, every object has its own language to communicate its use
-          to its "user." The better this language, the easier and more successfully the object can be used for its purpose.
-        <br><br>
         As a hybrid between developer and designer, I am always exploring new techniques to refine my skills. 
         With a background in both <b>SOFTWARE DEVELOPMENT</b> and <b>USER EXPERIENCE DESIGN</b>, I bridge the gap between functionality and aesthetics.
         <br><br>
-        UX-Design for me means to make complex systems not only intuitive but also a pleasure to use. This not only means having a good eye for visual 
+        UX Design for me means to make complex systems not only intuitive but also a pleasure to use. This not only means having a good eye for visual 
         quality but also a very good understanding of the structure any system. Being a software developer enables me to go deeper into a systems core 
         functionality to workout bottlenecks, handicaps for the user and also the devlopers crating it. A big part of my work is to help navigate complex 
         discussions between designers, developers and managers. Understanding goals and complications of both worlds can greatly accelerate the problem
-        solving at all stages of a project.
+        solving at all stages of a project. 
+        <div class="citation">
+          <p>"Every <b>THING</b> is an interface!"</p>
+        </div>
+        I am convinced that every object, whether created by humans or naturally formed,
+        is an interface. Consciously or unconsciously used, every object has its own language to communicate its use
+        to its "user." The better this language, the easier and more successfully the object can be used for its purpose.
         <br><br>
         The majority of the projects I worked on in recent years are <b>MIXED REALITY</b> projects. I developed several applications for the Microsoft 
         HoloLens since the very day the first iteration of this device was availabe in Germany and even took part in an exclusive developer preview, where 
@@ -59,8 +70,6 @@
         plattform that I also directly contibuted to as a Unity developer (<a href="https://www.3spin-learning.com">3spin Learning</a>).
       </p>
     </div>
-
-    <hr>
 
     <!-- Skills Section -->
     <!-- Dev -->
@@ -253,7 +262,6 @@
       </div> 
     </div>
 
-    <hr>
   </main>
 
   <footer>

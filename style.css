@@ -84,26 +84,65 @@ b {
   max-width: 1000px;
   padding: 0 20px;
   margin: auto;
+  margin-bottom: 50px;
+}
+
+/* NAV */
+
+.header
+{
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: 15px;
+  /*background-color: #2a3339;
+  border-radius: 8px;*/
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+}
+
+.nav > .nav-links {
+  float: right;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: #efefef;
+  position: relative;
+}
+
+.nav > .nav-links > a:hover {
+  color:#e7b64c;
+}
+
+.nav > .nav-links > a.active {
+  font-weight: bold;
+}
+
+.nav > .nav-links > a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color:#97adb6;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.nav > #nav-check {
+  display: none;
 }
 
 /*  PROFILE */
 
-.profile
-{
-  display: grid;
-  align-items: start;
-  justify-items: start;
-  justify-content: start;
-  margin-bottom: 15px;
-  background-color: #2a3339;
-  border-radius: 8px;
-}
-
 .profile-data {
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  margin: 10px;
   color: white;
 }
 
@@ -120,6 +159,7 @@ b {
   display: flex;
   align-items: start;
   color: white;
+  width: 100%;
 }
 
 .profile-content .profile-pic {  
@@ -135,6 +175,11 @@ b {
 
 .profile-content .profile-pic:hover {
   transform: scale(1.05);
+}
+
+.icon-buttons
+{
+  display: flex;
 }
 
 .icon-button
@@ -282,51 +327,6 @@ b {
 .button:hover {
   color: #eef6ff;
   background: #e7b64c;
-}
-
-/* NAV */
-
-.nav {
-  height: 50px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.nav > .nav-links {
-  display: inline;
-  font-size: 18px;
-  border-radius: 8px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px;
-  text-decoration: none;
-  color: #efefef;
-  position: relative;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > .nav-links > a.active {
-  font-weight: bold;
-}
-
-.nav > .nav-links > a.active::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color:#97adb6;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-}
-
-.nav > #nav-check {
-  display: none;
 }
 
 /* MEDIA QUERRIES */

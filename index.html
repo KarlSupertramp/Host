@@ -5,38 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Showroom - Karl Martin</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./javascript.js"></script>
 </head>
 
 <body>
   <main>
 
-    <!-- Profile -->
+    <!-- Header -->
     <div class="container">   
-      <ul class="profile">
+
+      <div class="header">
         <li class="profile-content">
           <a href="./about.html">
             <img src="https://avatars.githubusercontent.com/u/12151775?v=4" class="profile-pic" />
           </a>
           <div class="profile-data">
             <h5>Karl Martin</h5>
-            <a class="icon-button" href="https://github.com/KarlSupertramp/">
-              <img src="./images/githubLogo.svg">
-            </a>
-            <a class="icon-button" href="https://www.linkedin.com/in/karl-martin-b95981183/">
-              <img src="./images/linkedinLogo.svg">
-            </a>
-            <a class="icon-button" href="mailto:KarlUweMartin@gmail.com">
-              <img src="./images/emailLogo.svg">
-            </a>
+            <div class="icon-buttons">              
+              <a class="icon-button" href="https://github.com/KarlSupertramp/">
+                <img src="./images/githubLogo.svg">
+              </a>
+              <a class="icon-button" href="https://www.linkedin.com/in/karl-martin-b95981183/">
+                <img src="./images/linkedinLogo.svg">
+              </a>
+              <a class="icon-button" href="mailto:KarlUweMartin@gmail.com">
+                <img src="./images/emailLogo.svg">
+              </a>
+            </div>
           </div>
         </li>
-      </ul>
-
+      </div>
+      <!-- Navi -->
       <div class="nav">
         <input type="checkbox" id="nav-check">       
         <div class="nav-links">
-          <a href="./index.html">Showroom</a>
+          <a class="active" href="./index.html">Showroom</a>
           <a href="./about.html">About Me</a>
           <!--<a href="#">Cudos</a>-->
         </div>
@@ -44,16 +46,14 @@
 
     </div>
 
-    <div class="container">
+      <div class="container">
       <p>
         This <b>SHOWROOM</b> is my way of sharing projects that might otherwise sit forgotten in a repository. Most of
         my work is done in Unity, which conveniently supports WebGL deployment - so I'll do my best to make my demos
         as cross-platform as possible.
       </p>
-    </div>
-    <div class="container">
-      <ul class="cards">
 
+      <ul class="cards">
         <!-- Orbit Sandbox -->
         <li class="cards-item">
           <div class="card">
